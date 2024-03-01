@@ -1,0 +1,19 @@
+﻿task_index,task_name,duration,task_type,start_trigger,end_trigger,task_parameters
+1,Acquisition Start,0.1,acq_start,128,129,
+2,StillFace,2,stillface,130,131,"{'filename': 'stillface-', 'condition': 'engagement', 'stillface_time': 120}"
+3,StillFace,2,stillface,132,133,"{'filename': 'stillface-', 'condition': 'still', 'stillface_time': 120}"
+4,StillFace,2,stillface,134,135,"{'filename': 'stillface-', 'condition': 'reengagement', 'stillface_time': 120}"
+5,Wait 1,0,wait,136,137,
+6,CyberBall Practice,2,cyberballpractice,138,139,"{'filename': 'cyberball-', 'block_threshold': .8, 'cb_throws': 10}"
+7,CyberBall,3,cyberball,140,141,"{'filename': 'cyberball-', 'block_threshold': .67, 'cb_throws': 40}"
+8,CyberBall,3,cyberball,142,143,"{'filename': 'cyberball-', 'block_threshold': .33, 'cb_throws': 40}"
+9,CyberBall,3,cyberball,144,145,"{'filename': 'cyberball-', 'block_threshold': .20, 'cb_throws': 40}"
+10,Wait 2,0,wait,146,147,
+11,RaceFace,1,raceface,148,149,"{'filename': 'raceface-', 'race_condition': 'black', 'n_files': 26, 'total_time': 40, 'facepresent_time': 10}"
+12,RaceFace,1,raceface,150,151,"{'filename': 'raceface-', 'race_condition': 'white', 'n_files': 17, 'total_time': 40, 'facepresent_time': 10}"
+13,RaceFace,1,raceface,152,153,"{'filename': 'raceface-', 'race_condition': 'hisp_asian', 'n_files': 27, 'total_time': 40, 'facepresent_time': 10}"
+11,RaceFace,1,raceface,154,155,"{'filename': 'raceface-', 'race_condition': 'black', 'n_files': 26, 'total_time': 40, 'facepresent_time': 10}"
+12,RaceFace,1,raceface,156,157,"{'filename': 'raceface-', 'race_condition': 'white', 'n_files': 17, 'total_time': 40, 'facepresent_time': 10}"
+13,RaceFace,1,raceface,158,159,"{'filename': 'raceface-', 'race_condition': 'hisp_asian', 'n_files': 27, 'total_time': 40, 'facepresent_time': 10}"
+14,Wait 3,10,wait,160,161,
+15,Acquisition End,0.1,acq_end,162,163,
